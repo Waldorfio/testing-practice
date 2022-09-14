@@ -1,7 +1,7 @@
 
-function capitalize(string) {
-  let newString = string[0].toUpperCase()
-  string.shift()
-  newString = newString + string
-  return newString
+function caps(string) {
+  const first = string[0].toUpperCase();
+  const capString = first + string.slice(1, string.length);
+  return capString
 }
+module.exports = caps
